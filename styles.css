@@ -1,0 +1,113 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #111;
+  padding: 15px 20px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.logo {
+  height: 50px;
+  width: auto;
+}
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+.tv-container {
+  width: 90vw;
+  max-width: 900px;
+}
+
+/* Channel selector */
+.channel-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #ccc;
+}
+#channel-select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+/* Video player */
+#tv-player {
+  user-select: none;
+  background: black;
+  border: 4px solid #666;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+/* Program title */
+.program-title {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Georgia", serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #888;
+  box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.05);
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.footer-logo {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kingdom of Greece TV</title>
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    href="logo.png"
+    type="image/svg+xml"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img
+        src="logo.png"
+        alt="Kingdom of Greece Seal"
+        class="logo"
+      />
+      <h1>Kingdom of Greece TV</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="tv-container">
+      <label for="channel-select" class="channel-label">Select Channel:</label>
+      <select id="channel-select">
+        <option value="Βουλή">Βουλή</option>
+        <option value="ΕΡΤ">ΕΡΤ</option>
+        <option value="ΕΣΤ">ΕΣΤ</option>
+      </select>
+
+      <video
+        id="tv-player"
+        autoplay
+        playsinline
+        width="100%"
+        height="auto"
+        controls
+        controlslist="nodownload nofullscreen noremoteplayback"
+      ></video>
+
+      <div id="current-program" class="program-title">Loading...</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img
+        src="logo.png"
+        alt="Kingdom of Greece Seal"
+        class="footer-logo"
+      />
+      <p>© 2025 Kingdom of Greece. All rights reserved.</p>
+      <p>Contact: Ministry of Media, Kingdom of Greece</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
